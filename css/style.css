@@ -22,6 +22,7 @@
   /* Category badge colors */
   --badge-print: #8b6b4e;
   --badge-photo: #6b7a8b;
+  --badge-edit: #8b6b7a;
   --badge-draw: #7a6b5c;
 
   /* Layout */
@@ -668,6 +669,35 @@ img.img-lazy.is-loaded {
     conic-gradient(from 180deg, var(--text-subtle), var(--bg-elevated));
 }
 
+.skill-icon-edit {
+  background: radial-gradient(circle at 35% 35%, var(--accent-terracotta) 0%, transparent 52%),
+    conic-gradient(from 180deg, var(--accent-beige), var(--bg-elevated));
+}
+
+.skill-icon-edit::before {
+  content: "";
+  position: absolute;
+  width: 56%;
+  height: 3px;
+  background: rgba(217, 201, 180, 0.9);
+  top: 26%;
+  left: 22%;
+  transform: rotate(-10deg);
+  border-radius: 2px;
+}
+
+.skill-icon-edit::after {
+  content: "";
+  position: absolute;
+  width: 36%;
+  height: 40%;
+  top: 44%;
+  left: 32%;
+  border: 2px solid rgba(196, 165, 116, 0.95);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 2px rgba(184, 122, 92, 0.18);
+}
+
 .skill-icon-draw::before {
   content: "";
   position: absolute;
@@ -931,6 +961,11 @@ img.img-lazy.is-loaded {
 .badge-photo {
   background: rgba(107, 122, 139, 0.35);
   color: #d4dde8;
+}
+
+.badge-edit {
+  background: rgba(139, 107, 122, 0.35);
+  color: #ead7e0;
 }
 
 .badge-draw {

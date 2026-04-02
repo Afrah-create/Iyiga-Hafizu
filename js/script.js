@@ -17,107 +17,233 @@
   "use strict";
 
   /* --------------------------------------------------------------------------
-   * DATA: Nine portfolio pieces (three per medium)
+   * DATA: Student projects from `assets/images/`
+   * - Filenames:
+   *   - `photo*.jpeg` => Photography (photos)
+   *   - `photography*.jpeg` => Editing (editing experiments)
+   *   - `drawing*.jpeg` => Drawing studies
+   * - Modal shows long, detailed descriptions only for a small "featured" set.
    * -------------------------------------------------------------------------- */
   const projects = [
+    // Photography (photos)
     {
       id: 1,
-      title: "Linocut: City Grain",
-      category: "Printmaking",
-      description: "Bold relief lines carve rhythm from weathered walls and signage.",
+      title: "Photo Study — Night Light on Kampala Windows",
+      category: "Photography",
+      description: "A quiet night scene built from reflections and controlled contrast.",
       fullDescription:
-        "A limited edition linocut exploring the tactile language of urban surfaces. High-contrast cuts echo the way light falls across plaster and metal — each impression whispers a different story from the last.",
-      medium: "Oil-based relief ink on cotton rag; hand burnished; edition of 12.",
-      image: "https://picsum.photos/id/119/800/600",
-      date: "March 2026",
+        "This photo starts with observation: light patterns in shop windows and wet pavement. I captured the scene with an emphasis on highlights, then kept shadows intact during editing so the texture stays believable.\n\nThe goal was simple: let the warm tones feel like memory while the dark areas hold structure.",
+      medium: "Photography: handheld night capture; Editing: contrast shaping + highlight protection.",
+      date: "April 2026",
+      detailed: true,
+      image: "assets/images/photo1.jpeg",
     },
+
+    // Editing (photography*)
     {
       id: 2,
-      title: "Copper Plate Etching — Veil",
-      category: "Printmaking",
-      description: "Soft aquatint gradients float over fine cross-hatched shadows.",
+      title: "Editing Notes — Contrast & Grain (Featured)",
+      category: "Editing",
+      description: "Curves and grain to make the image feel printed, not processed.",
       fullDescription:
-        "An intaglio study in restraint: layered aquatint bites build a veil of tone while selective wiping leaves traces of the artist's hand along the plate's edge.",
-      medium: "Copper etching, aquatint, Charbonnel inks on Somerset velvet.",
-      image: "https://picsum.photos/id/250/800/600",
-      date: "February 2026",
+        "I treated this edit like a printmaking test: build contrast gradually, then stop. The grain is intentionally visible, because it carries the atmosphere.\n\nInstead of flattening blacks, I protected midtones so the scene keeps breathing room.",
+      medium: "Editing: Curves + tonal range control; simulated print grain; gentle local adjustments.",
+      date: "March 2026",
+      detailed: true,
+      image: "assets/images/photography1.jpeg",
     },
     {
       id: 3,
-      title: "Monotype — Tide Memory",
-      category: "Printmaking",
-      description: "Single-pull ghosts of color washed across a smooth field plate.",
-      fullDescription:
-        "Monotype allows one honest moment before the image disappears. Transparent rolls of blues and ochres suggest tide lines and tide memory — never the same twice.",
-      medium: "Akua intaglio ink on polycarbonate plate; Rives BFK paper.",
-      image: "https://picsum.photos/id/338/800/600",
-      date: "January 2026",
+      title: "Editing Log — Terracotta Shadows",
+      category: "Editing",
+      description: "Warm shadows balanced against neutral highlights for skin-safe tone.",
+      fullDescription: "",
+      medium: "Editing workflow (details in featured notes).",
+      date: "March 2026",
+      detailed: false,
+      image: "assets/images/photography2.jpeg",
     },
     {
       id: 4,
-      title: "Golden Hour Ledger",
-      category: "Photography & Editing",
-      description: "Warm tonal curves and split toning honor late-day light on skin and stone.",
-      fullDescription:
-        "Shot on quiet rooftops, this series chases the last ten minutes of sun. Editing favors curved luminance masks — lifting golds without sacrificing ink-like shadows.",
-      medium: "Digital capture; Lightroom + Photoshop; archival pigment print.",
-      image: "https://picsum.photos/id/564/800/600",
-      date: "March 2026",
+      title: "Editing Log — Texture Preservation",
+      category: "Editing",
+      description: "Sharpening that avoids crunchy edges; soft focus in the right places.",
+      fullDescription: "",
+      medium: "Editing workflow (details in featured notes).",
+      date: "February 2026",
+      detailed: false,
+      image: "assets/images/photography3.jpeg",
     },
     {
       id: 5,
-      title: "Double Exposure — Familiar Strangers",
-      category: "Photography & Editing",
-      description: "Layered silhouettes question identity between crowd and solitude.",
-      fullDescription:
-        "In-camera double exposures from markets and metro stations, refined with gentle masking so silhouettes breathe without becoming kitsch.",
-      medium: "Mirrorless camera; compositing in Photoshop; Hahnemühle photo rag.",
-      image: "https://picsum.photos/id/628/800/600",
+      title: "Editing Sprint — Quiet Street Color",
+      category: "Editing",
+      description: "Subtle color balancing to keep the mood intact without oversaturation.",
+      fullDescription: "",
+      medium: "Editing workflow (details in featured notes).",
       date: "February 2026",
+      detailed: false,
+      image: "assets/images/photography4.jpeg",
     },
     {
       id: 6,
-      title: "Infrared Urban Decay",
-      category: "Photography & Editing",
-      description: "False-color foliage against graphite skies — cities as alien gardens.",
-      fullDescription:
-        "720nm infrared conversion reveals chlorophyll as snow-bright while concrete falls away into cool voids. Channel swaps and local HSL sculpt a speculative palette.",
-      medium: "Full-spectrum body; IR filter; color grading pipeline in Capture One.",
-      image: "https://picsum.photos/id/866/800/600",
-      date: "December 2025",
+      title: "Editing Study — Dodge & Burn Map",
+      category: "Editing",
+      description: "Selective light shaping to guide the viewer’s eye naturally.",
+      fullDescription: "",
+      medium: "Editing workflow (details in featured notes).",
+      date: "January 2026",
+      detailed: false,
+      image: "assets/images/photography5.jpeg",
     },
     {
       id: 7,
-      title: "Charcoal — Nineteen Gestures",
-      category: "Drawing",
-      description: "Fast gestures searching for weight before detail arrives.",
+      title: "Editing Notes — Edges & Breath (Featured)",
+      category: "Editing",
+      description: "Local contrast adjustments to keep details alive, not harsh.",
       fullDescription:
-        "A sequence of nineteen two-minute poses — compressed charcoal on toned paper. Erasure is as important as mark: lifting light back into the form.",
-      medium: "Nitram charcoal, kneaded eraser, warm gray Canson Mi-Teintes.",
-      image: "https://picsum.photos/id/1008/800/600",
-      date: "March 2026",
+        "This edit focuses on edges and transitions. I kept the strongest contrast only where the subject needs clarity, then softened surrounding areas.\n\nThe result feels closer to charcoal and pencil studies: clear focal marks with gentle gradients elsewhere.",
+      medium: "Editing: local contrast + micro-detail control; tone mapping; soft color harmonizing.",
+      date: "January 2026",
+      detailed: true,
+      image: "assets/images/photography6.jpeg",
     },
     {
       id: 8,
-      title: "Ink & Wash — Conservatory",
-      category: "Drawing",
-      description: "Loose brush and dry brush describe humidity and leaf-shadow.",
-      fullDescription:
-        "Working wet-into-wet in a winter conservatory, the drawing chases steam on glass and the scatter of winter light across ferns.",
-      medium: "Bamboo pen, iron gall ink, diffuse watercolor washes.",
-      image: "https://picsum.photos/id/1056/800/600",
-      date: "February 2026",
+      title: "Editing Fragment — Foliage Re-Imagined",
+      category: "Editing",
+      description: "A tonal remap that makes leaves look like their own universe.",
+      fullDescription: "",
+      medium: "Editing workflow (details in featured notes).",
+      date: "December 2025",
+      detailed: false,
+      image: "assets/images/photography8.jpeg",
     },
     {
       id: 9,
-      title: "Pastel — Kampala Streets",
-      category: "Drawing",
-      description: "Soft pastel over textured ground captures street tempo and color.",
+      title: "Editing Test — Double Realities",
+      category: "Editing",
+      description: "Layering experiments to build narrative from ordinary scenes.",
+      fullDescription: "",
+      medium: "Editing workflow (details in featured notes).",
+      date: "December 2025",
+      detailed: false,
+      image: "assets/images/photography9.jpeg",
+    },
+    {
+      id: 10,
+      title: "Editing Sprint — Warm Highlights (Featured)",
+      category: "Editing",
+      description: "Gold tones lifted carefully while preserving shadow structure.",
       fullDescription:
-        "Quick pastel studies from Kampala streets: umbrellas, moto reflections, ochre dust. Scribbled underpainting locks vibration before layers of softer hue calm the surface.",
-      medium: "Hard and soft pastel on UART 400 sanded paper; fixed lightly.",
-      image: "https://picsum.photos/id/318/800/600",
+        "Highlight control is the heart of this piece. I shaped highlights with a soft roll-off, then rebalanced midtones so the warmth doesn’t become loud.\n\nThe edit aims for a “printed” glow—felt more than seen.",
+      medium: "Editing: highlight protection; tonal curve shaping; subtle split toning.",
+      date: "April 2026",
+      detailed: true,
+      image: "assets/images/photography10.jpeg",
+    },
+    {
+      id: 11,
+      title: "Editing Log — Deep Charcoal Blacks",
+      category: "Editing",
+      description: "Blacks that hold texture instead of disappearing into ink.",
+      fullDescription: "",
+      medium: "Editing workflow (details in featured notes).",
+      date: "March 2026",
+      detailed: false,
+      image: "assets/images/photography11.jpeg",
+    },
+    {
+      id: 12,
+      title: "Editing Log — Texture Stack",
+      category: "Editing",
+      description: "Layering to keep paper-like texture visible in the final image.",
+      fullDescription: "",
+      medium: "Editing workflow (details in featured notes).",
+      date: "February 2026",
+      detailed: false,
+      image: "assets/images/photography12.jpeg",
+    },
+    {
+      id: 13,
+      title: "Editing Fragment — Memory in Motion",
+      category: "Editing",
+      description: "A short series frame: the feeling of motion held in a still image.",
+      fullDescription: "",
+      medium: "Editing workflow (details in featured notes).",
+      date: "November 2025",
+      detailed: false,
+      image: "assets/images/photography47.jpeg",
+    },
+
+    // Drawing (drawing*)
+    {
+      id: 14,
+      title: "Charcoal Gesture #1 — Weight",
+      category: "Drawing",
+      description: "Quick marks to find structure before detail arrives.",
+      fullDescription: "",
+      medium: "Drawing workflow (details in featured notes).",
+      date: "April 2026",
+      detailed: false,
+      image: "assets/images/drawing1.jpeg",
+    },
+    {
+      id: 15,
+      title: "Charcoal Study #2 — Space (Featured)",
+      category: "Drawing",
+      description: "A study in proportion and negative space using charcoal restraint.",
+      fullDescription:
+        "This drawing begins with spacing, not shading. I block the main planes first, then let charcoal darken only the decisions that matter.\n\nErasure becomes part of the composition—lifting light back into the form.",
+      medium: "Drawing: charcoal + kneaded eraser; toned paper; value mapping from gesture to form.",
+      date: "March 2026",
+      detailed: true,
+      image: "assets/images/drawing2.jpeg",
+    },
+    {
+      id: 16,
+      title: "Graphite Study #3 — Line Rhythm",
+      category: "Drawing",
+      description: "A line-based practice focused on rhythm and direction changes.",
+      fullDescription: "",
+      medium: "Drawing workflow (details in featured notes).",
+      date: "March 2026",
+      detailed: false,
+      image: "assets/images/drawing3.jpeg",
+    },
+    {
+      id: 17,
+      title: "Figure Rhythm #4 — Tempo",
+      category: "Drawing",
+      description: "Gesture-first drawing to capture movement in a single pass.",
+      fullDescription: "",
+      medium: "Drawing workflow (details in featured notes).",
+      date: "February 2026",
+      detailed: false,
+      image: "assets/images/drawing4.jpeg",
+    },
+    {
+      id: 18,
+      title: "Ink Wash #5 — Leaf Shadow (Featured)",
+      category: "Drawing",
+      description: "Loose ink and wash to translate humidity and soft edges.",
+      fullDescription:
+        "The wash here is intentionally uneven. I used ink bleeding as a compositional tool, then re-drew only the lines that needed clarity.\n\nThe piece explores how shadow behaves when the air feels thick—soft edges, layered values, and quiet contrast.",
+      medium: "Drawing: ink + watercolor wash; layered wet-into-wet; edge control via dry brush.",
       date: "January 2026",
+      detailed: true,
+      image: "assets/images/drawing5.jpeg",
+    },
+    {
+      id: 19,
+      title: "Pastel Dust #6 — Kampala Dust",
+      category: "Drawing",
+      description: "Color dust on textured ground to capture street tempo.",
+      fullDescription: "",
+      medium: "Drawing workflow (details in featured notes).",
+      date: "December 2025",
+      detailed: false,
+      image: "assets/images/drawing6.jpeg",
     },
   ];
 
@@ -395,7 +521,7 @@
    * - Subheadline +300ms, tagline +600ms after typewriter completes (spec).
    * - Buttons + ~350ms after tagline wave for a gentle cascade.
    * -------------------------------------------------------------------------- */
-  const HERO_HEADLINE = "Alex Rivera";
+  const HERO_HEADLINE = "Iyiga Hafizu";
   const TYPE_MS = 62;
 
   function initHeroEntrance() {
@@ -440,10 +566,10 @@
   }
 
   function badgeClassForCategory(category) {
-    if (category === "Printmaking") return "badge-print";
-    if (category === "Photography & Editing") return "badge-photo";
+    if (category === "Photography") return "badge-photo";
+    if (category === "Editing") return "badge-edit";
     if (category === "Drawing") return "badge-draw";
-    return "badge-print";
+    return "badge-photo";
   }
 
   function getFilteredProjects() {
@@ -526,6 +652,7 @@
 
   function openProjectModal(project) {
     if (!project) return;
+    currentProjectForModal = project;
     const badgeEl = document.getElementById("project-modal-badge");
     const titleEl = document.getElementById("project-modal-title");
     const dateEl = document.getElementById("project-modal-date");
@@ -537,10 +664,23 @@
     badgeEl.textContent = project.category;
     titleEl.textContent = project.title;
     dateEl.textContent = project.date;
-    descEl.textContent = project.fullDescription;
-    medEl.textContent = project.medium;
+    const processBtn = document.getElementById("project-process-btn");
+    if (project.detailed) {
+      // `fullDescription` may contain artist-friendly paragraphs. We store it as
+      // plain text and convert line breaks to `<br>` for readability.
+      const raw = project.fullDescription || project.description;
+      descEl.innerHTML = escapeHtml(raw).replace(/\n\n/g, "<br><br>").replace(/\n/g, "<br>");
+      medEl.textContent = project.medium;
+      if (processBtn) processBtn.textContent = "View Process";
+    } else {
+      descEl.textContent = project.description;
+      medEl.textContent =
+        project.mediumHint ||
+        "Full medium & techniques are expanded for featured works. Request process notes for this piece.";
+      if (processBtn) processBtn.textContent = "Request Process Notes";
+    }
     imgEl.classList.remove("is-loaded");
-    imgEl.src = project.image.replace("/800/600", "/1200/800");
+    imgEl.src = project.image;
     imgEl.alt = project.title;
     bindLazyImages(projectModal);
 
@@ -555,6 +695,8 @@
   }
 
   let lastFocused = null;
+  // Used for the project "View Process" button inside the modal.
+  let currentProjectForModal = null;
 
   function openModal(modalEl) {
     lastFocused = document.activeElement;
@@ -720,12 +862,21 @@
   }
 
   function onProcessClick() {
-    const med = document.getElementById("project-modal-medium");
-    const extra =
-      med && med.textContent
-        ? "\n\nProcess note: edition logs, progressive proofs, and registration marks are archived in the studio flat-file."
-        : "";
-    window.alert("Process documentation (demo): progressive proofs and tear sheets." + extra);
+    if (!currentProjectForModal) {
+      window.alert("Process notes are not available right now. Please open a project first.");
+      return;
+    }
+
+    if (currentProjectForModal.detailed) {
+      window.alert(
+        "Process documentation (demo):\n\n• I plan edits like print tests: build contrast step-by-step.\n• I protect highlights and let shadows carry texture.\n• I review the piece in both dark and light view to keep the mood consistent."
+      );
+      return;
+    }
+
+    window.alert(
+      "Request Process Notes (demo):\n\nThis piece is part of the studio collection, but only featured works include long-form notes.\nIf you’d like the full workflow for this one, reach out via the contact form."
+    );
   }
 
   function onNavLinkClick(e) {
