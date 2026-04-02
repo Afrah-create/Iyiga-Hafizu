@@ -1,6 +1,6 @@
 /**
  * ============================================================================
- * Alex Rivera — Portfolio & Blog (Vanilla JS)
+ * Iyiga Hafizu — Portfolio & Journal (Vanilla JS)
  * ----------------------------------------------------------------------------
  * Responsibilities:
  * - Scroll progress bar: page scroll 0–100%, transform-based fill + debounced ARIA
@@ -247,68 +247,79 @@
     },
   ];
 
+  /**
+   * Journal: curated subset of local `assets/images/` — not every gallery file.
+   * `detailed: true` => longer modal article; `false` => shorter note-style post.
+   */
   const blogPosts = [
     {
       id: "b1",
-      title: "The Joy of Linocut Printmaking",
-      excerpt: "Why carving backward feels like learning a secret language with the gouge.",
-      date: "March 18, 2026",
-      image: "https://picsum.photos/id/193/900/500",
+      title: "Night Windows — What the Camera Sees First",
+      excerpt: "From a single photo study: reflections, contrast, and when to stop editing.",
+      date: "March 2026",
+      image: "assets/images/photo1.jpeg",
+      detailed: true,
       contentHtml: `
-        <h3 id="blog-modal-title">The Joy of Linocut Printmaking</h3>
-        <p class="blog-modal-meta">March 18, 2026 · Printmaking</p>
-        <img class="img-lazy" src="https://picsum.photos/id/193/900/500" alt="Abstract workshop textures" width="900" height="500" loading="lazy" decoding="async">
-        <p>There is a particular joy in linocut: you are always thinking in reverse. The white of the paper is everything you choose to leave behind; the black — or the first roll of ink — is the courage of your cut.</p>
-        <p>I love how the first proof always lies. It reveals where you were timid with the gouge, where a curve wanted more breath. By the fourth pull, the block and I have usually reached an honest agreement.</p>
-        <img class="img-lazy" src="https://picsum.photos/id/367/900/500" alt="Print tools and paper" width="900" height="500" loading="lazy" decoding="async">
-        <p>For students: keep your bench clean, warm your ink plate slightly in winter, and never rush the tuning fork test — if the ink sings, it usually rolls true.</p>
+        <h3 id="blog-modal-title">Night Windows — What the Camera Sees First</h3>
+        <p class="blog-modal-meta">March 2026 · Photography</p>
+        <img class="img-lazy" src="assets/images/photo1.jpeg" alt="Night photography study" width="900" height="500" loading="lazy" decoding="async">
+        <p>This frame started as a simple walk home. I noticed how shop glass stacked reflections on top of real space — two worlds in one rectangle.</p>
+        <p>In camera, I protected highlights first. If the brightest points go flat, the mood dies. Only after that did I think about deepening shadows.</p>
+        <img class="img-lazy" src="assets/images/photography2.jpeg" alt="Related editing study" width="900" height="500" loading="lazy" decoding="async">
+        <p>The second image is from the same week: a smaller editing test where I practiced the same rule — protect light, then sculpt dark.</p>
+        <p><strong>Takeaway:</strong> night photography is less about “making it bright” and more about keeping believable contrast.</p>
       `,
     },
     {
       id: "b2",
-      title: "Editing Techniques That Changed My Photography",
-      excerpt: "Curves, color isolation, and the ethics of the crop — a studio notebook.",
-      date: "February 4, 2026",
-      image: "https://picsum.photos/id/180/900/500",
+      title: "Editing as Listening",
+      excerpt: "Why I treat sliders like volume knobs, not fixes.",
+      date: "February 2026",
+      image: "assets/images/photography1.jpeg",
+      detailed: true,
       contentHtml: `
-        <h3 id="blog-modal-title">Editing Techniques That Changed My Photography</h3>
-        <p class="blog-modal-meta">February 4, 2026 · Photography</p>
-        <img class="img-lazy" src="https://picsum.photos/id/180/900/500" alt="City light study" width="900" height="500" loading="lazy" decoding="async">
-        <p>Editing is not correction — it is continuation. The shutter ends one sentence; the curve tool begins the next. Three habits shifted my work: luminosity masks for skin and stone, color range isolation for odd urban greens, and printing early to punish lazy contrast.</p>
-        <p>I keep a "lie journal" — notes on images I almost over-smoothed. Humility scales faster than presets.</p>
+        <h3 id="blog-modal-title">Editing as Listening</h3>
+        <p class="blog-modal-meta">February 2026 · Editing</p>
+        <img class="img-lazy" src="assets/images/photography1.jpeg" alt="Editing study" width="900" height="500" loading="lazy" decoding="async">
+        <p>Editing is not about proving I was there. It is about deciding what the viewer should feel first.</p>
+        <p>I start with global balance: exposure, white balance, and contrast. Then I work locally — small burns and dodges, not global blasting.</p>
+        <p>Grain is sometimes added back on purpose. A little texture keeps the image human, especially when the scene already feels delicate.</p>
+        <img class="img-lazy" src="assets/images/photography4.jpeg" alt="Second editing reference" width="900" height="500" loading="lazy" decoding="async">
+        <p>This companion frame helped me compare two moods from similar material — warm versus restrained.</p>
       `,
     },
     {
       id: "b3",
-      title: "Sketching in Kampala Streets",
-      excerpt: "Pastel dust, traffic hum, and the generosity of strangers pausing.",
-      date: "January 22, 2026",
-      image: "https://picsum.photos/id/342/900/500",
+      title: "Charcoal: Two Kinds of Patience",
+      excerpt: "Gesture first, patience second — a short studio note.",
+      date: "January 2026",
+      image: "assets/images/drawing3.jpeg",
+      detailed: false,
       contentHtml: `
-        <h3 id="blog-modal-title">Sketching in Kampala Streets</h3>
-        <p class="blog-modal-meta">January 22, 2026 · Drawing</p>
-        <img class="img-lazy" src="https://picsum.photos/id/342/900/500" alt="Street atmosphere reference" width="900" height="500" loading="lazy" decoding="async">
-        <p>Kampala teaches speed. Umbrellas become geometry; bodas become diagonal rhythm. I work smaller than I want to — a discipline — so one scene fits in the time it takes for a cloud to cross the sun.</p>
-        <p>Pastel over a sharp charcoal scaffold stops mud. The city rewards color that is slightly louder than accurate; truth lives in temperature, not in naming hues.</p>
-        <img class="img-lazy" src="https://picsum.photos/id/325/900/500" alt="Urban sketching detail" width="900" height="500" loading="lazy" decoding="async">
-        <p>Tip: tape a scrap of mesh over your box — it keeps dust from becoming a second medium on your clothes.</p>
+        <h3 id="blog-modal-title">Charcoal: Two Kinds of Patience</h3>
+        <p class="blog-modal-meta">January 2026 · Drawing</p>
+        <img class="img-lazy" src="assets/images/drawing3.jpeg" alt="Charcoal drawing study" width="900" height="500" loading="lazy" decoding="async">
+        <p>Charcoal rewards two speeds: fast searching lines, then slow corrections. I try not to rush the second part.</p>
       `,
     },
     {
       id: "b4",
-      title: "When the Press Groans Kindly",
-      excerpt: "Notes on pressure, humidity, and listening to the etching press.",
-      date: "December 7, 2025",
-      image: "https://picsum.photos/id/1076/900/500",
+      title: "Warm Highlights, Quiet Shadows",
+      excerpt: "A quick editing note from a golden-hour experiment.",
+      date: "December 2025",
+      image: "assets/images/photography10.jpeg",
+      detailed: false,
       contentHtml: `
-        <h3 id="blog-modal-title">When the Press Groans Kindly</h3>
-        <p class="blog-modal-meta">December 7, 2025 · Studio notes</p>
-        <img class="img-lazy" src="https://picsum.photos/id/1076/900/500" alt="Studio atmosphere" width="900" height="500" loading="lazy" decoding="async">
-        <p>The etching press has opinions. In dry weather it sings high; when humidity climbs, the groan deepens — a reminder that paper is hygroscopic hope. I log pressure in fractional turns now, not guesses.</p>
-        <p>Printmaking taught me that repetition is not duplication: it is a chorus. Each voice similar; none identical.</p>
+        <h3 id="blog-modal-title">Warm Highlights, Quiet Shadows</h3>
+        <p class="blog-modal-meta">December 2025 · Editing</p>
+        <img class="img-lazy" src="assets/images/photography10.jpeg" alt="Warm highlight edit" width="900" height="500" loading="lazy" decoding="async">
+        <p>Golden hour edits tempt you to push warmth everywhere. Here I kept shadows cool so the highlights could glow without turning sugary.</p>
       `,
     },
   ];
+
+  /** WhatsApp Business / chat: +256 776 581377 → digits only for wa.me */
+  const WHATSAPP_E164 = "256776581377";
 
   let activeCategory = "all";
   let searchQuery = "";
@@ -839,15 +850,30 @@
     if (post) openBlogModal(post);
   }
 
+  /**
+   * Contact → WhatsApp: builds `wa.me` URL with pre-filled text (name, email, message).
+   * No server: opens WhatsApp Web or the app in a new tab.
+   */
   function onContactSubmit(e) {
     e.preventDefault();
     const fd = new FormData(contactForm);
-    const payload = {
-      name: fd.get("name"),
-      email: fd.get("email"),
-      message: fd.get("message"),
-    };
-    console.log("[Contact form — demo only]", payload);
+    const name = String(fd.get("name") || "").trim();
+    const email = String(fd.get("email") || "").trim();
+    const message = String(fd.get("message") || "").trim();
+    if (!name || !email || !message) {
+      window.alert("Please fill in your name, email, and message.");
+      return;
+    }
+    const body = `Hello Iyiga,
+
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}`;
+    const url = `https://wa.me/${WHATSAPP_E164}?text=${encodeURIComponent(body)}`;
+    console.log("[Contact → WhatsApp]", { name, email, messageLength: message.length });
+    window.open(url, "_blank", "noopener,noreferrer");
     formSuccess.hidden = false;
     contactForm.reset();
     formSuccess.focus();
