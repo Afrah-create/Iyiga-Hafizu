@@ -20,6 +20,19 @@
   <!-- Skip link for keyboard users -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
+  <!-- Global scroll progress (0–100% of page); filled via script.js + debounced updates -->
+  <div
+    class="scroll-progress"
+    id="scroll-progress"
+    role="progressbar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="0"
+    aria-label="Page scroll progress"
+  >
+    <div class="scroll-progress-fill" id="scroll-progress-fill"></div>
+  </div>
+
   <!-- ==================== 1. NAVBAR ==================== -->
   <header class="site-header" id="site-header" role="banner">
     <nav class="navbar" aria-label="Primary navigation">
@@ -64,21 +77,28 @@
   </header>
 
   <main id="main-content">
-    <!-- ==================== 2. HERO ==================== -->
+    <!-- ==================== 2. HERO (animated canvas + typewriter + staggered text) ==================== -->
     <section class="hero" id="hero" aria-labelledby="hero-title">
-      <div class="hero-bg" role="img" aria-label="Abstract artistic background"></div>
+      <!-- Lightweight canvas: particles + ink-like strokes (see initHeroCanvas in script.js) -->
+      <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
       <div class="hero-overlay"></div>
-      <div class="hero-inner reveal">
-        <p class="hero-eyebrow">Fine Arts Portfolio</p>
-        <h1 id="hero-title" class="hero-title">Alex Rivera</h1>
-        <p class="hero-sub">Fine Arts Student | Printmaking • Photography &amp; Editing • Drawing</p>
-        <p class="hero-tagline">Crafting stories through ink, light, and line — one impression at a time.</p>
-        <div class="hero-actions">
-          <a href="#gallery" class="btn btn-primary">Explore Gallery</a>
-          <a href="#blog" class="btn btn-secondary">Read My Journal</a>
+      <div class="hero-inner" id="hero-inner">
+        <p class="hero-eyebrow hero-anim hero-anim--eyebrow" id="hero-eyebrow">Fine Arts Portfolio</p>
+        <h1 id="hero-title" class="hero-title" aria-label="Alex Rivera">
+          <span class="typewriter-target" id="typewriter-target"></span><span class="typewriter-cursor" id="typewriter-cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="hero-sub hero-anim hero-anim--sub" id="hero-sub">
+          Fine Arts Student | Printmaking • Photography &amp; Editing • Drawing
+        </p>
+        <p class="hero-tagline hero-anim hero-anim--tagline" id="hero-tagline">
+          Crafting stories through ink, light, and line — one impression at a time.
+        </p>
+        <div class="hero-actions hero-anim hero-anim--actions" id="hero-actions">
+          <a href="#gallery" class="btn btn-primary" title="Jump to the gallery section">Explore Gallery</a>
+          <a href="#blog" class="btn btn-secondary" title="Jump to the creative journal">Read My Journal</a>
         </div>
       </div>
-      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+      <a href="#about" class="scroll-indicator hero-anim hero-anim--scroll" id="hero-scroll-hint" aria-label="Scroll to about section">
         <span class="scroll-indicator-text">Scroll</span>
         <span class="scroll-indicator-line" aria-hidden="true"></span>
       </a>
@@ -90,7 +110,7 @@
         <h2 id="about-title" class="section-title reveal">About</h2>
         <div class="about-grid">
           <div class="about-photo-wrap reveal">
-            <img src="https://picsum.photos/id/1027/600/750" alt="Portrait placeholder representing Alex Rivera" class="about-photo" width="600" height="750" loading="lazy">
+            <img src="https://picsum.photos/id/1027/600/750" alt="Portrait placeholder representing Alex Rivera" class="about-photo img-lazy" width="600" height="750" loading="lazy" decoding="async">
           </div>
           <div class="about-copy">
             <div class="reveal">
@@ -128,13 +148,13 @@
 
         <div class="gallery-controls reveal">
           <label for="gallery-search" class="sr-only">Search portfolio by title or description</label>
-          <input type="search" id="gallery-search" class="gallery-search" placeholder="Search by title or description…" autocomplete="off" aria-controls="gallery-grid">
+          <input type="search" id="gallery-search" class="gallery-search" placeholder="Search by title or description…" autocomplete="off" aria-controls="gallery-grid" title="Search by artwork title or description">
 
           <div class="filter-group" role="tablist" aria-label="Filter by medium">
-            <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
-            <button type="button" class="filter-btn" data-filter="Printmaking" role="tab" aria-selected="false">Printmaking</button>
-            <button type="button" class="filter-btn" data-filter="Photography &amp; Editing" role="tab" aria-selected="false">Photography &amp; Editing</button>
-            <button type="button" class="filter-btn" data-filter="Drawing" role="tab" aria-selected="false">Drawing</button>
+            <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true" title="Show all media">All</button>
+            <button type="button" class="filter-btn" data-filter="Printmaking" role="tab" aria-selected="false" title="Filter: printmaking works">Printmaking</button>
+            <button type="button" class="filter-btn" data-filter="Photography &amp; Editing" role="tab" aria-selected="false" title="Filter: photography and editing">Photography &amp; Editing</button>
+            <button type="button" class="filter-btn" data-filter="Drawing" role="tab" aria-selected="false" title="Filter: drawing works">Drawing</button>
           </div>
         </div>
 
@@ -220,7 +240,7 @@
     <div class="modal-panel project-modal-panel">
       <button type="button" class="modal-close" id="project-modal-close" aria-label="Close project details">&times;</button>
       <div class="modal-body project-modal-body">
-        <img src="" alt="" class="modal-image" id="project-modal-img" width="900" height="600">
+        <img src="" alt="" class="modal-image img-lazy" id="project-modal-img" width="900" height="600" loading="lazy" decoding="async">
         <div class="modal-text">
           <span class="modal-badge" id="project-modal-badge"></span>
           <h3 id="project-modal-title"></h3>
