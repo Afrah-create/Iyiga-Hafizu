@@ -1,6 +1,6 @@
 /**
  * ============================================================================
- * Iyiga Hafizu — Portfolio & Journal (Vanilla JS)
+ * Iyiga Hafizu Portfolio and Journal (Vanilla JS)
  * ----------------------------------------------------------------------------
  * Responsibilities:
  * - Scroll progress bar: page scroll 0–100%, transform-based fill + debounced ARIA
@@ -30,10 +30,10 @@
       id: 1,
       title: "Structural Decay",
       category: "Photography",
-      description: "Photographic study of an abandoned brick dwelling under the Ugandan sky.",
+      description: "I photographed this abandoned brick home under the Ugandan sky.",
       fullDescription:
-        "Photographic study of an abandoned brick dwelling under the Ugandan sky.\n\nThis composition documents weathered masonry, collapsed lines, and the quiet atmosphere surrounding neglected architecture.",
-      medium: "Photography: documentary architecture study; tonal balance and texture preservation.",
+        "I photographed this abandoned brick home under the Ugandan sky.\n\nIn this composition I focused on weathered masonry, collapsed lines, and the quiet atmosphere around neglected architecture.",
+      medium: "I used documentary photography with careful tonal balance and texture control.",
       date: "April 2026",
       detailed: true,
       image: "assets/images/photo1.jpeg",
@@ -44,10 +44,10 @@
       id: 2,
       title: "Sandy's Celebration",
       category: "Event Branding",
-      description: "Dynamic digital layout for a birthday event.",
+      description: "I designed this digital layout for a birthday event.",
       fullDescription:
-        "Dynamic digital layout for a birthday event.\n\nThe design balances celebratory typography, hierarchy, and color accents to create a vibrant, share-ready event branding piece.",
-      medium: "Digital design: event branding, typography hierarchy, and promotional composition.",
+        "I designed this digital layout for a birthday event.\n\nI balanced celebration focused typography, clear hierarchy, and color accents to create a vibrant promotional piece.",
+      medium: "I used digital design for event branding, typography hierarchy, and promotional composition.",
       date: "March 2026",
       detailed: true,
       image: "assets/images/photography1.jpeg",
@@ -56,9 +56,9 @@
       id: 3,
       title: "Eid Mubarak",
       category: "Political Branding",
-      description: "Professional commemorative flyer for Yumbe District leadership.",
+      description: "I created this commemorative flyer for leadership in Yumbe District.",
       fullDescription: "",
-      medium: "Editing workflow (details in featured notes).",
+      medium: "I can share the editing workflow for this piece on request.",
       date: "March 2026",
       detailed: false,
       image: "assets/images/photography2.jpeg",
@@ -67,110 +67,110 @@
       id: 4,
       title: "Academic Triumph",
       category: "Milestone Photography",
-      description: "High-glare digital composition for a graduation celebration.",
+      description: "I created this digital composition for a graduation celebration.",
       fullDescription: "",
-      medium: "Editing workflow (details in featured notes).",
+      medium: "I can share the editing workflow for this piece on request.",
       date: "February 2026",
       detailed: false,
       image: "assets/images/photography3.jpeg",
     },
     {
       id: 5,
-      title: "Editing Sprint — Quiet Street Color",
+      title: "Editing Sprint Quiet Street Color",
       category: "Editing",
-      description: "Subtle color balancing to keep the mood intact without oversaturation.",
+      description: "I balanced color softly to keep the mood intact without oversaturation.",
       fullDescription: "",
-      medium: "Editing workflow (details in featured notes).",
+      medium: "I can share the editing workflow for this piece on request.",
       date: "February 2026",
       detailed: false,
       image: "assets/images/photography4.jpeg",
     },
     {
       id: 6,
-      title: "Editing Study — Dodge & Burn Map",
+      title: "Editing Study Dodge and Burn Map",
       category: "Editing",
-      description: "Selective light shaping to guide the viewer’s eye naturally.",
+      description: "I shaped the light selectively to guide the viewer eye naturally.",
       fullDescription: "",
-      medium: "Editing workflow (details in featured notes).",
+      medium: "I can share the editing workflow for this piece on request.",
       date: "January 2026",
       detailed: false,
       image: "assets/images/photography5.jpeg",
     },
     {
       id: 7,
-      title: "Editing Notes — Edges & Breath (Featured)",
+      title: "Editing Notes Edges and Breath Featured",
       category: "Editing",
-      description: "Local contrast adjustments to keep details alive, not harsh.",
+      description: "I used local contrast adjustments to keep details alive and gentle.",
       fullDescription:
         "This edit focuses on edges and transitions. I kept the strongest contrast only where the subject needs clarity, then softened surrounding areas.\n\nThe result feels closer to charcoal and pencil studies: clear focal marks with gentle gradients elsewhere.",
-      medium: "Editing: local contrast + micro-detail control; tone mapping; soft color harmonizing.",
+      medium: "I used local contrast control, tone mapping, and soft color harmonizing.",
       date: "January 2026",
       detailed: true,
       image: "assets/images/photography6.jpeg",
     },
     {
       id: 8,
-      title: "Editing Fragment — Foliage Re-Imagined",
+      title: "Editing Fragment Foliage Reimagined",
       category: "Editing",
-      description: "A tonal remap that makes leaves look like their own universe.",
+      description: "I remapped the tones so the leaves feel like their own universe.",
       fullDescription: "",
-      medium: "Editing workflow (details in featured notes).",
+      medium: "I can share the editing workflow for this piece on request.",
       date: "December 2025",
       detailed: false,
       image: "assets/images/photography8.jpeg",
     },
     {
       id: 9,
-      title: "Editing Test — Double Realities",
+      title: "Editing Test Double Realities",
       category: "Editing",
-      description: "Layering experiments to build narrative from ordinary scenes.",
+      description: "I used layering experiments to build narrative from ordinary scenes.",
       fullDescription: "",
-      medium: "Editing workflow (details in featured notes).",
+      medium: "I can share the editing workflow for this piece on request.",
       date: "December 2025",
       detailed: false,
       image: "assets/images/photography9.jpeg",
     },
     {
       id: 10,
-      title: "Editing Sprint — Warm Highlights (Featured)",
+      title: "Editing Sprint Warm Highlights Featured",
       category: "Editing",
-      description: "Gold tones lifted carefully while preserving shadow structure.",
+      description: "I lifted warm tones carefully while preserving shadow structure.",
       fullDescription:
-        "Highlight control is the heart of this piece. I shaped highlights with a soft roll-off, then rebalanced midtones so the warmth doesn’t become loud.\n\nThe edit aims for a “printed” glow—felt more than seen.",
-      medium: "Editing: highlight protection; tonal curve shaping; subtle split toning.",
+        "Highlight control is the heart of this piece. I shaped highlights with a soft roll off, then rebalanced midtones so the warmth stayed controlled.\n\nThis edit aims for a printed glow that you feel before you notice.",
+      medium: "I used highlight protection, tonal curve shaping, and subtle split toning.",
       date: "April 2026",
       detailed: true,
       image: "assets/images/photography10.jpeg",
     },
     {
       id: 11,
-      title: "Editing Log — Deep Charcoal Blacks",
+      title: "Editing Log Deep Charcoal Blacks",
       category: "Editing",
-      description: "Blacks that hold texture instead of disappearing into ink.",
+      description: "I kept the blacks deep while still preserving texture.",
       fullDescription: "",
-      medium: "Editing workflow (details in featured notes).",
+      medium: "I can share the editing workflow for this piece on request.",
       date: "March 2026",
       detailed: false,
       image: "assets/images/photography11.jpeg",
     },
     {
       id: 12,
-      title: "Editing Log — Texture Stack",
+      title: "Editing Log Texture Stack",
       category: "Editing",
-      description: "Layering to keep paper-like texture visible in the final image.",
+      description: "I layered the edit to keep a paper like texture visible in the final image.",
       fullDescription: "",
-      medium: "Editing workflow (details in featured notes).",
+      medium: "I can share the editing workflow for this piece on request.",
       date: "February 2026",
       detailed: false,
       image: "assets/images/photography12.jpeg",
     },
     {
       id: 13,
-      title: "Editing Fragment — Memory in Motion",
+      title: "Editing Fragment Memory in Motion",
       category: "Editing",
-      description: "A short series frame: the feeling of motion held in a still image.",
+      description: "This frame holds the feeling of motion inside a still image.",
       fullDescription: "",
-      medium: "Editing workflow (details in featured notes).",
+      medium: "I can share the editing workflow for this piece on request.",
       date: "November 2025",
       detailed: false,
       image: "assets/images/photography47.jpeg",
@@ -181,9 +181,9 @@
       id: 14,
       title: "Cultural Rhythms",
       category: "Drawing",
-      description: "Surreal charcoal study of African masks and traditional percussion.",
+      description: "I created this surreal charcoal study with African masks and traditional percussion.",
       fullDescription: "",
-      medium: "Drawing workflow (details in featured notes).",
+      medium: "I can share the drawing workflow for this piece on request.",
       date: "April 2026",
       detailed: false,
       image: "assets/images/drawing1.jpeg",
@@ -192,10 +192,10 @@
       id: 15,
       title: "Botanical Soul",
       category: "Drawing",
-      description: "A conceptual pencil piece exploring human-nature symbiosis via Monstera foliage.",
+      description: "I created this conceptual pencil piece exploring the bond between people and nature through Monstera foliage.",
       fullDescription:
-        "A conceptual pencil piece exploring human-nature symbiosis via Monstera foliage.\n\nOrganic leaf forms and facial structure are interwoven to visualize emotional and ecological connectedness.",
-      medium: "Drawing: graphite and pencil layering on paper; form integration and tonal study.",
+        "I created this conceptual pencil piece exploring the bond between people and nature through Monstera foliage.\n\nI interwove organic leaf forms and facial structure to express emotional and ecological connection.",
+      medium: "I used graphite and pencil layering on paper with form integration and tonal study.",
       date: "March 2026",
       detailed: true,
       image: "assets/images/drawing2.jpeg",
@@ -204,9 +204,9 @@
       id: 16,
       title: "The Visionary",
       category: "Drawing",
-      description: "A portrait of leadership and conviction rendered in graphite.",
+      description: "I rendered this graphite portrait to express leadership and conviction.",
       fullDescription: "",
-      medium: "Drawing workflow (details in featured notes).",
+      medium: "I can share the drawing workflow for this piece on request.",
       date: "March 2026",
       detailed: false,
       image: "assets/images/drawing3.jpeg",
@@ -215,9 +215,9 @@
       id: 17,
       title: "The Gift",
       category: "Drawing",
-      description: "A narrative sketch exploring the emotional spectrum of gratitude.",
+      description: "I made this narrative sketch to explore the emotional range of gratitude.",
       fullDescription: "",
-      medium: "Drawing workflow (details in featured notes).",
+      medium: "I can share the drawing workflow for this piece on request.",
       date: "February 2026",
       detailed: false,
       image: "assets/images/drawing4.jpeg",
@@ -226,10 +226,10 @@
       id: 18,
       title: "Devotion",
       category: "Drawing",
-      description: "A study of spiritual serenity featuring intricate henna hand-art.",
+      description: "I created this study of spiritual serenity with intricate henna hand art.",
       fullDescription:
-        "A study of spiritual serenity featuring intricate henna hand-art.\n\nThe composition emphasizes gesture, ornament, and stillness to communicate reverence and inner calm.",
-      medium: "Drawing: graphite and ink detailing with ornamental hand-study techniques.",
+        "I created this study of spiritual serenity with intricate henna hand art.\n\nI emphasized gesture, ornament, and stillness to communicate reverence and inner calm.",
+      medium: "I used graphite and ink detailing with ornamental hand study techniques.",
       date: "January 2026",
       detailed: true,
       image: "assets/images/drawing5.jpeg",
@@ -238,9 +238,9 @@
       id: 19,
       title: "The Fan",
       category: "Drawing",
-      description: "Capturing the intersection of personal identity and sporting passion.",
+      description: "I captured the meeting point between personal identity and sporting passion.",
       fullDescription: "",
-      medium: "Drawing workflow (details in featured notes).",
+      medium: "I can share the drawing workflow for this piece on request.",
       date: "December 2025",
       detailed: false,
       image: "assets/images/drawing6.jpeg",
@@ -248,7 +248,7 @@
   ];
 
   /**
-   * Journal: curated subset of local `assets/images/` — not every gallery file.
+  * Journal: curated subset of local `assets/images/` and not every gallery file.
    * `detailed: true` => longer modal article; `false` => shorter note-style post.
    */
   const blogPosts = [
@@ -278,16 +278,16 @@
         <p class="blog-modal-meta">February 2026 · Editing</p>
         <img class="img-lazy" src="assets/images/photography1.jpeg" alt="Editing study" width="900" height="500" loading="lazy" decoding="async">
         <p>Editing is not about proving I was there. It is about deciding what the viewer should feel first.</p>
-        <p>I start with global balance: exposure, white balance, and contrast. Then I work locally — small burns and dodges, not global blasting.</p>
+        <p>I start with global balance, exposure, white balance, and contrast. Then I work locally with small burns and dodges instead of global blasting.</p>
         <p>Grain is sometimes added back on purpose. A little texture keeps the image human, especially when the scene already feels delicate.</p>
         <img class="img-lazy" src="assets/images/photography4.jpeg" alt="Second editing reference" width="900" height="500" loading="lazy" decoding="async">
-        <p>This companion frame helped me compare two moods from similar material — warm versus restrained.</p>
+        <p>This companion frame helped me compare two moods from similar material, warm and restrained.</p>
       `,
     },
     {
       id: "b3",
       title: "Charcoal: Two Kinds of Patience",
-      excerpt: "Gesture first, patience second — a short studio note.",
+      excerpt: "Gesture first and patience second. This is a short studio note.",
       date: "January 2026",
       image: "assets/images/drawing3.jpeg",
       detailed: false,
@@ -301,7 +301,7 @@
     {
       id: "b4",
       title: "Warm Highlights, Quiet Shadows",
-      excerpt: "A quick editing note from a golden-hour experiment.",
+      excerpt: "A quick editing note from a golden hour experiment.",
       date: "December 2025",
       image: "assets/images/photography10.jpeg",
       detailed: false,
@@ -355,7 +355,7 @@
 
   /* --------------------------------------------------------------------------
    * Lazy image fade-in: add `.is-loaded` when the browser finishes decoding bits.
-   * Keeps one listener per image via `{ once: true }` — no memory leaks on reflows.
+  * Keeps one listener per image via `{ once: true }` and prevents memory leaks on reflows.
    * -------------------------------------------------------------------------- */
   function bindLazyImages(root) {
     if (!root) return;
@@ -512,7 +512,7 @@
       }
     });
 
-    /* First layout pass can report 0×0 — retry once on the next frame */
+    /* First layout pass can report 0x0 so retry once on the next frame */
     if (!w || !h) {
       requestAnimationFrame(() => {
         resize();
@@ -891,13 +891,13 @@ ${message}`;
 
     if (currentProjectForModal.detailed) {
       window.alert(
-        "Process documentation (demo):\n\n• I plan edits like print tests: build contrast step-by-step.\n• I protect highlights and let shadows carry texture.\n• I review the piece in both dark and light view to keep the mood consistent."
+        "Process documentation (demo):\n\nI plan edits like print tests and build contrast step by step.\nI protect highlights and let shadows carry texture.\nI review the piece in both dark and light view to keep the mood consistent."
       );
       return;
     }
 
     window.alert(
-      "Request Process Notes (demo):\n\nThis piece is part of the studio collection, but only featured works include long-form notes.\nIf you’d like the full workflow for this one, reach out via the contact form."
+      "Request Process Notes (demo):\n\nThis piece is part of my studio collection, but only featured works include long form notes.\nIf you want the full workflow for this one, reach out through the contact form."
     );
   }
 
