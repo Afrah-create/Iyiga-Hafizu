@@ -28,12 +28,12 @@
     // Photography (photos)
     {
       id: 1,
-      title: "Photo Study — Night Light on Kampala Windows",
+      title: "Structural Decay",
       category: "Photography",
-      description: "A quiet night scene built from reflections and controlled contrast.",
+      description: "Photographic study of an abandoned brick dwelling under the Ugandan sky.",
       fullDescription:
-        "This photo starts with observation: light patterns in shop windows and wet pavement. I captured the scene with an emphasis on highlights, then kept shadows intact during editing so the texture stays believable.\n\nThe goal was simple: let the warm tones feel like memory while the dark areas hold structure.",
-      medium: "Photography: handheld night capture; Editing: contrast shaping + highlight protection.",
+        "Photographic study of an abandoned brick dwelling under the Ugandan sky.\n\nThis composition documents weathered masonry, collapsed lines, and the quiet atmosphere surrounding neglected architecture.",
+      medium: "Photography: documentary architecture study; tonal balance and texture preservation.",
       date: "April 2026",
       detailed: true,
       image: "assets/images/photo1.jpeg",
@@ -42,21 +42,21 @@
     // Editing (photography*)
     {
       id: 2,
-      title: "Editing Notes — Contrast & Grain (Featured)",
-      category: "Editing",
-      description: "Curves and grain to make the image feel printed, not processed.",
+      title: "Sandy's Celebration",
+      category: "Event Branding",
+      description: "Dynamic digital layout for a birthday event.",
       fullDescription:
-        "I treated this edit like a printmaking test: build contrast gradually, then stop. The grain is intentionally visible, because it carries the atmosphere.\n\nInstead of flattening blacks, I protected midtones so the scene keeps breathing room.",
-      medium: "Editing: Curves + tonal range control; simulated print grain; gentle local adjustments.",
+        "Dynamic digital layout for a birthday event.\n\nThe design balances celebratory typography, hierarchy, and color accents to create a vibrant, share-ready event branding piece.",
+      medium: "Digital design: event branding, typography hierarchy, and promotional composition.",
       date: "March 2026",
       detailed: true,
       image: "assets/images/photography1.jpeg",
     },
     {
       id: 3,
-      title: "Editing Log — Terracotta Shadows",
-      category: "Editing",
-      description: "Warm shadows balanced against neutral highlights for skin-safe tone.",
+      title: "Eid Mubarak",
+      category: "Political Branding",
+      description: "Professional commemorative flyer for Yumbe District leadership.",
       fullDescription: "",
       medium: "Editing workflow (details in featured notes).",
       date: "March 2026",
@@ -65,9 +65,9 @@
     },
     {
       id: 4,
-      title: "Editing Log — Texture Preservation",
-      category: "Editing",
-      description: "Sharpening that avoids crunchy edges; soft focus in the right places.",
+      title: "Academic Triumph",
+      category: "Milestone Photography",
+      description: "High-glare digital composition for a graduation celebration.",
       fullDescription: "",
       medium: "Editing workflow (details in featured notes).",
       date: "February 2026",
@@ -179,9 +179,9 @@
     // Drawing (drawing*)
     {
       id: 14,
-      title: "Charcoal Gesture #1 — Weight",
+      title: "Cultural Rhythms",
       category: "Drawing",
-      description: "Quick marks to find structure before detail arrives.",
+      description: "Surreal charcoal study of African masks and traditional percussion.",
       fullDescription: "",
       medium: "Drawing workflow (details in featured notes).",
       date: "April 2026",
@@ -190,21 +190,21 @@
     },
     {
       id: 15,
-      title: "Charcoal Study #2 — Space (Featured)",
+      title: "Botanical Soul",
       category: "Drawing",
-      description: "A study in proportion and negative space using charcoal restraint.",
+      description: "A conceptual pencil piece exploring human-nature symbiosis via Monstera foliage.",
       fullDescription:
-        "This drawing begins with spacing, not shading. I block the main planes first, then let charcoal darken only the decisions that matter.\n\nErasure becomes part of the composition—lifting light back into the form.",
-      medium: "Drawing: charcoal + kneaded eraser; toned paper; value mapping from gesture to form.",
+        "A conceptual pencil piece exploring human-nature symbiosis via Monstera foliage.\n\nOrganic leaf forms and facial structure are interwoven to visualize emotional and ecological connectedness.",
+      medium: "Drawing: graphite and pencil layering on paper; form integration and tonal study.",
       date: "March 2026",
       detailed: true,
       image: "assets/images/drawing2.jpeg",
     },
     {
       id: 16,
-      title: "Graphite Study #3 — Line Rhythm",
+      title: "The Visionary",
       category: "Drawing",
-      description: "A line-based practice focused on rhythm and direction changes.",
+      description: "A portrait of leadership and conviction rendered in graphite.",
       fullDescription: "",
       medium: "Drawing workflow (details in featured notes).",
       date: "March 2026",
@@ -213,9 +213,9 @@
     },
     {
       id: 17,
-      title: "Figure Rhythm #4 — Tempo",
+      title: "The Gift",
       category: "Drawing",
-      description: "Gesture-first drawing to capture movement in a single pass.",
+      description: "A narrative sketch exploring the emotional spectrum of gratitude.",
       fullDescription: "",
       medium: "Drawing workflow (details in featured notes).",
       date: "February 2026",
@@ -224,21 +224,21 @@
     },
     {
       id: 18,
-      title: "Ink Wash #5 — Leaf Shadow (Featured)",
+      title: "Devotion",
       category: "Drawing",
-      description: "Loose ink and wash to translate humidity and soft edges.",
+      description: "A study of spiritual serenity featuring intricate henna hand-art.",
       fullDescription:
-        "The wash here is intentionally uneven. I used ink bleeding as a compositional tool, then re-drew only the lines that needed clarity.\n\nThe piece explores how shadow behaves when the air feels thick—soft edges, layered values, and quiet contrast.",
-      medium: "Drawing: ink + watercolor wash; layered wet-into-wet; edge control via dry brush.",
+        "A study of spiritual serenity featuring intricate henna hand-art.\n\nThe composition emphasizes gesture, ornament, and stillness to communicate reverence and inner calm.",
+      medium: "Drawing: graphite and ink detailing with ornamental hand-study techniques.",
       date: "January 2026",
       detailed: true,
       image: "assets/images/drawing5.jpeg",
     },
     {
       id: 19,
-      title: "Pastel Dust #6 — Kampala Dust",
+      title: "The Fan",
       category: "Drawing",
-      description: "Color dust on textured ground to capture street tempo.",
+      description: "Capturing the intersection of personal identity and sporting passion.",
       fullDescription: "",
       medium: "Drawing workflow (details in featured notes).",
       date: "December 2025",
@@ -254,20 +254,16 @@
   const blogPosts = [
     {
       id: "b1",
-      title: "Night Windows — What the Camera Sees First",
-      excerpt: "From a single photo study: reflections, contrast, and when to stop editing.",
+      title: "Structural Decay",
+      excerpt: "Photographic study of an abandoned brick dwelling under the Ugandan sky.",
       date: "March 2026",
       image: "assets/images/photo1.jpeg",
       detailed: true,
       contentHtml: `
-        <h3 id="blog-modal-title">Night Windows — What the Camera Sees First</h3>
+        <h3 id="blog-modal-title">Structural Decay</h3>
         <p class="blog-modal-meta">March 2026 · Photography</p>
-        <img class="img-lazy" src="assets/images/photo1.jpeg" alt="Night photography study" width="900" height="500" loading="lazy" decoding="async">
-        <p>This frame started as a simple walk home. I noticed how shop glass stacked reflections on top of real space — two worlds in one rectangle.</p>
-        <p>In camera, I protected highlights first. If the brightest points go flat, the mood dies. Only after that did I think about deepening shadows.</p>
-        <img class="img-lazy" src="assets/images/photography2.jpeg" alt="Related editing study" width="900" height="500" loading="lazy" decoding="async">
-        <p>The second image is from the same week: a smaller editing test where I practiced the same rule — protect light, then sculpt dark.</p>
-        <p><strong>Takeaway:</strong> night photography is less about “making it bright” and more about keeping believable contrast.</p>
+        <img class="img-lazy" src="assets/images/photo1.jpeg" alt="Photographic study of an abandoned brick dwelling" width="900" height="500" loading="lazy" decoding="async">
+        <p>Photographic study of an abandoned brick dwelling under the Ugandan sky.</p>
       `,
     },
     {
